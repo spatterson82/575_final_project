@@ -1,2 +1,2 @@
-data/unused_geojson*
+data/unused_geojson/*
 data/del_json.py
