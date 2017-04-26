@@ -1,10 +1,8 @@
 (function(){
 
-    var file_list = [   "Alabama_103_to_107.geojson",
+    var file_list = ["Alabama_103_to_107.geojson",
         "Alabama_108_to_112.geojson",
         "Alabama_90_to_92.geojson",
-        "Alaska_103_to_112.geojson",
-        "Alaska_86_to_102.geojson",
         "Arizona_103_to_107.geojson",
         "Arizona_108_to_108.geojson",
         "Arizona_109_to_112.geojson",
@@ -30,9 +28,6 @@
         "Georgia_103_to_103.geojson",
         "Georgia_104_to_104.geojson",
         "Georgia_105_to_107.geojson",
-        "Hawaii_103_to_107.geojson",
-        "Hawaii_108_to_112.geojson",
-        "Hawaii_86_to_91.geojson",
         "Idaho_103_to_107.geojson",
         "Idaho_108_to_112.geojson",
         "Idaho_90_to_92.geojson",
@@ -207,8 +202,8 @@
     function createMap(){
         //create the map
         var my_map = L.map('mapid', {
-            center: [38, -90],
-            zoom: 5
+            center: [38, -98],
+            zoom: 4
         });
 
         //add OSM base tilelayer

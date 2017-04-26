@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58b02963-46d4-439a-9cc9-58996b548269" name="Default" comment="575 final - Slimmed down geojson files.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/geojson/West_Virginia_103_to_107.geojson" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/geojson/West_Virginia_108_to_112.geojson" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/geojson/West_Virginia_98_to_102.geojson" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    <list default="true" id="58b02963-46d4-439a-9cc9-58996b548269" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,11 +56,11 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="621">
+              <caret line="205" column="19" lean-forward="false" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
               <folding>
-                <element signature="e#34#5875#0" expanded="false" />
-                <element signature="e#5900#6913#0" expanded="false" />
+                <element signature="e#34#5690#0" expanded="false" />
+                <element signature="e#5715#6728#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -355,7 +350,7 @@
       <workItem from="1492644934119" duration="13752000" />
       <workItem from="1493077813963" duration="1578000" />
       <workItem from="1493080160923" duration="5660000" />
-      <workItem from="1493089080026" duration="3802000" />
+      <workItem from="1493089080026" duration="3956000" />
     </task>
     <task id="LOCAL-00001" summary="575 final - committing any new code.">
       <created>1493082279581</created>
@@ -385,11 +380,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493089384617</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="575 Final - Added ability to load geojson files.">
+      <created>1493164760663</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1493164760663</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24792000" />
+    <option name="totallyTimeSpent" value="24946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -435,7 +437,8 @@
     <MESSAGE value="575 final - committing any new code." />
     <MESSAGE value="575 final - Slimmed down geojson files." />
     <MESSAGE value="575 final - Changed name of unused geojson folder." />
-    <option name="LAST_COMMIT_MESSAGE" value="575 final - Changed name of unused geojson folder." />
+    <MESSAGE value="575 Final - Added ability to load geojson files." />
+    <option name="LAST_COMMIT_MESSAGE" value="575 Final - Added ability to load geojson files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -465,8 +468,8 @@
         <state relative-caret-position="1040">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#34#5875#0" expanded="false" />
-            <element signature="e#5900#6913#0" expanded="false" />
+            <element signature="e#34#5690#0" expanded="false" />
+            <element signature="e#5715#6728#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -601,8 +604,8 @@
         <state relative-caret-position="-350">
           <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
           <folding>
-            <element signature="e#34#5875#0" expanded="false" />
-            <element signature="e#5900#6913#0" expanded="false" />
+            <element signature="e#34#5690#0" expanded="false" />
+            <element signature="e#5715#6728#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,8 +641,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#34#5875#0" expanded="false" />
-            <element signature="e#5900#6913#0" expanded="false" />
+            <element signature="e#34#5690#0" expanded="false" />
+            <element signature="e#5715#6728#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -683,8 +686,8 @@
         <state relative-caret-position="1040">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#34#5875#0" expanded="false" />
-            <element signature="e#5900#6913#0" expanded="false" />
+            <element signature="e#34#5690#0" expanded="false" />
+            <element signature="e#5715#6728#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -816,11 +819,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="621">
+          <caret line="205" column="19" lean-forward="false" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
           <folding>
-            <element signature="e#34#5875#0" expanded="false" />
-            <element signature="e#5900#6913#0" expanded="false" />
+            <element signature="e#34#5690#0" expanded="false" />
+            <element signature="e#5715#6728#0" expanded="false" />
           </folding>
         </state>
       </provider>
