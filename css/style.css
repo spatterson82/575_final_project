@@ -1,45 +1,60 @@
 /*Stylesheet by Stephen L. Patterson*/
 
 html, body, .container {
+    background-color: #d2be96;
+    border-radius: 15px;
     height: 100%;
     width: 100%;
-    margin: 0px;
 }
 
-.row {
-    height: 70%;
+#title_block {
+    float: left;
+    position: absolute;
+
+    border-radius: 15px;
+    border: 2px solid #463d3c;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#column1 {
+    height: 100%;
+}
+
+#column2 {
+    height: 100%;
+}
+
+#mapid {
+    margin: 10px;
+    height: 69%;
+    border-radius: 15px;
+    /*position: relative;*/
+    z-index: 400;
+    border: 2px solid #463d3c;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#footer {
+    border-radius: 15px;
+    /*overflow: auto;*/
+    margin: 10px;
+    margin-top: 1.5%;
+    height: 30%;
+    background: #f0f0f7;
 }
 
 .row-fluid {
     height: 50%;
 }
 
-#mapid {
+#panel1, #panel2 {
+    margin: 10px;
+    border-radius: 15px;
     height: 100%;
-}
-#column2 {
-    height: 100%;
-}
-
-#panel1 {
-    background:blue;
-    height: 100%;
+    border: 2px solid #463d3c;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 
-#panel2 {
-    background:red;
-    height: 100%;
-}
-
-.row2 {
-    height: 30%;
-}
-#footer {
-    /*margin-left: -20px;*/
-    height: 100%;
-    width: 100%;
-    background:green;
-}
 
 
