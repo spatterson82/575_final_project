@@ -217,43 +217,58 @@
         getData(my_map);
     };
 
+
+    // var panelContent = "<p><b>Congressman:</b></p>";
+    //
+    // function createPopup(feature, layer, radius) {
+    //     var popupContent = feature.properties.gage;
+    //
+    //     layer.bindPopup(popupContent, {
+    //         offset: new L.Point(0, -radius),
+    //         closeButton: false
+    //     });
+    // };
+
+
+    // load and color geojson
     function getData(my_map) {
-        $.ajax({
-            type: "POST",
-            url: "data/geojson/" + file_list[0],
-            dataType: 'json',
+        $.ajax("data/geojson/" + file_list[0], {
+            dataType: "json",
             success: function (response) {
-                geojsonLayer = L.geoJson(response, {
-                    style: function(feature) {
-                        switch (get_party(feature)) {
+                var geojson_layer = L.geoJson(response, {
+                    style: function (feature) {
+                        switch (get_json_item(feature, 'party')) {
                             case 'Republican':
                                 return {color: "#ff0000"};
                             case 'Democrat':
                                 return {color: "#0000ff"};
                         }
+                    },
+                    onEachFeature: function (feature, layer) {
+                        var party = get_json_item(feature, 'party');
+                        var name = get_json_item(feature, 'name');
+                        var district = get_json_item(feature, 'district');
+
+                        layer.bindPopup('Name: ' + name + '<br />' +
+                                        'District: ' + district + '<br />' +
+                                        'Party: ' + party);
                     }
-                }).addTo(my_map);
+                })
+                geojson_layer.addTo(my_map);
             }
         });
+    }
 
-        function get_party(feature) {
-            for (var i in feature.properties.member) {
-                var member = feature.properties.member[i];
-                for (var j in member) {
-                    var party = member[j].party;
-                    return party;
-                }
+
+    // parse JSON to obtain values
+    function get_json_item(feature, item) {
+        for (var i in feature.properties.member) {
+            var member = feature.properties.member[i];
+            for (var j in member) {
+                return member[j][item];
             }
         }
-
-
-        // Looping capability
-        // Use of Leaflet-Ajax plugin for loading geojson
-        // for (var i in file_list) {
-        //     var geojsonLayer = new L.GeoJSON.AJAX("data/geojson/" + file_list[i]);
-        //     geojsonLayer.addTo(my_map);
-        // };
-    };
+    }
 
 
     $(document).ready(createMap);

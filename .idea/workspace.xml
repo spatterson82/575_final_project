@@ -1,157 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58b02963-46d4-439a-9cc9-58996b548269" name="Default" comment="575 final - Changed name of unused geojson folder.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Alabama_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Alabama_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Alabama_90_to_92.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Alaska_103_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Alaska_86_to_102.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Arizona_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Arizona_108_to_108.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Arizona_109_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Arkansas_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Arkansas_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Arkansas_90_to_92.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/California_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/California_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/California_94_to_97.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Colorado_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Colorado_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Colorado_89_to_92.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Connecticut_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Connecticut_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Connecticut_89_to_92.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Delaware_103_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Delaware_13_to_17.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Delaware_18_to_97.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/District_Of_Columbia_98_to_102.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Florida_103_to_104.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Florida_105_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Florida_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Georgia_103_to_103.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Georgia_104_to_104.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Georgia_105_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Hawaii_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Hawaii_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Hawaii_86_to_91.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Idaho_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Idaho_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Idaho_90_to_92.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Illinois_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Illinois_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Illinois_90_to_92.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Indiana_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Indiana_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Indiana_91_to_92.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Iowa_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Iowa_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Iowa_88_to_92.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Kansas_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Kansas_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Kansas_90_to_92.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Kentucky_103_to_104.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Kentucky_105_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Kentucky_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Louisiana_103_to_103.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Louisiana_104_to_104.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Louisiana_105_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Maine_103_to_103.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Maine_104_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Maine_108_to_108.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Maryland_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Maryland_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Maryland_1_to_2.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Massachusetts_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Massachusetts_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Massachusetts_13_to_13.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Michigan_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Michigan_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Michigan_24_to_27.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Minnesota_103_to_103.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Minnesota_104_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Minnesota_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Mississippi_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Mississippi_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Mississippi_15_to_22.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Missouri_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Missouri_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Missouri_17_to_21.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Montana_103_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Montana_51_to_62.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Montana_63_to_65.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Nebraska_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Nebraska_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Nebraska_39_to_46.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Nevada_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Nevada_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Nevada_38_to_41.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_Hampshire_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_Hampshire_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_Hampshire_13_to_22.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_Jersey_103_to_105.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_Jersey_106_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_Jersey_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_Mexico_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_Mexico_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_Mexico_62_to_62.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_York_103_to_105.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_York_106_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/New_York_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/North_Dakota_103_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/North_Dakota_51_to_57.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/North_Dakota_58_to_62.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Ohio_100_to_102.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Ohio_103_to_104.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Ohio_105_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Oklahoma_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Oklahoma_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Oklahoma_60_to_62.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Oregon_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Oregon_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Oregon_35_to_52.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Pennsylvania_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Pennsylvania_108_to_108.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Pennsylvania_109_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Rhode_Island_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Rhode_Island_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Rhode_Island_1_to_2.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/South_Carolina_103_to_103.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/South_Carolina_104_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/South_Carolina_13_to_14.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/South_Dakota_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/South_Dakota_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/South_Dakota_51_to_62.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Tennessee_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Tennessee_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Tennessee_10_to_10.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Texas_103_to_104.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Texas_105_to_106.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Texas_107_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Utah_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Utah_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Utah_54_to_62.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Vermont_103_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Vermont_13_to_16.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Vermont_17_to_17.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Virginia_103_to_103.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Virginia_104_to_105.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Virginia_106_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Washington_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Washington_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Washington_51_to_52.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/West_Virginia_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/West_Virginia_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/West_Virginia_98_to_102.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Wisconsin_103_to_107.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Wisconsin_108_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Wisconsin_30_to_30.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Wyoming_103_to_112.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Wyoming_51_to_97.geojson" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/geojson/Wyoming_98_to_102.geojson" afterPath="" />
+    <list default="true" id="58b02963-46d4-439a-9cc9-58996b548269" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -180,11 +32,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="geojson.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/geojson.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="993">
+              <caret line="291" column="28" lean-forward="false" selection-start-line="291" selection-start-column="16" selection-end-line="291" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1022">
-              <caret line="231" column="58" lean-forward="true" selection-start-line="231" selection-start-column="58" selection-end-line="231" selection-end-column="58" />
+            <state relative-caret-position="1334">
+              <caret line="252" column="76" lean-forward="true" selection-start-line="252" selection-start-column="76" selection-end-line="252" selection-end-column="76" />
               <folding>
                 <element signature="e#18#67#0" expanded="false" />
                 <element signature="e#6315#7328#0" expanded="false" />
@@ -197,17 +59,17 @@
         <entry file="file://$PROJECT_DIR$/data/geojson/North_Carolina_107_to_107.geojson">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="604">
-              <caret line="0" column="319861" lean-forward="false" selection-start-line="0" selection-start-column="319861" selection-end-line="0" selection-end-column="319861" />
+              <caret line="0" column="319902" lean-forward="true" selection-start-line="0" selection-start-column="319902" selection-end-line="0" selection-end-column="319902" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="936">
+              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -228,6 +90,9 @@
       <find>district</find>
       <find>037107107010</find>
       <find>id</find>
+      <find>107</find>
+      <find>createPopup</find>
+      <find>pointToLayer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -236,13 +101,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/geojson.js" />
         <option value="$PROJECT_DIR$/js/d3_lab.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/data/del_json.py" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/geojson.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -492,7 +357,7 @@
       <workItem from="1493080160923" duration="5660000" />
       <workItem from="1493089080026" duration="2993000" />
       <workItem from="1493172566230" duration="6069000" />
-      <workItem from="1493251741402" duration="6748000" />
+      <workItem from="1493251741402" duration="9553000" />
     </task>
     <task id="LOCAL-00001" summary="575 final - committing any new code.">
       <created>1493082279581</created>
@@ -522,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493089384617</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="575 final - Color code based on party and only use North Carolina.">
+      <created>1493258562085</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1493258562085</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37967000" />
+    <option name="totallyTimeSpent" value="40772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4816" y="2644" width="4832" height="2632" extended-state="6" />
@@ -563,7 +435,8 @@
     <MESSAGE value="575 final - committing any new code." />
     <MESSAGE value="575 final - Slimmed down geojson files." />
     <MESSAGE value="575 final - Changed name of unused geojson folder." />
-    <option name="LAST_COMMIT_MESSAGE" value="575 final - Changed name of unused geojson folder." />
+    <MESSAGE value="575 final - Color code based on party and only use North Carolina." />
+    <option name="LAST_COMMIT_MESSAGE" value="575 final - Color code based on party and only use North Carolina." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -572,14 +445,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -889,16 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/geojson.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18512">
-          <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="375" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/del_json.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -922,25 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/geojson/North_Carolina_107_to_107.geojson">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="0" column="319861" lean-forward="false" selection-start-line="0" selection-start-column="319861" selection-end-line="0" selection-end-column="319861" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1022">
-          <caret line="231" column="58" lean-forward="true" selection-start-line="231" selection-start-column="58" selection-end-line="231" selection-end-column="58" />
-          <folding>
-            <element signature="e#18#67#0" expanded="false" />
-            <element signature="e#6315#7328#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -949,11 +785,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/unused_geojson/Connecticut_103_to_107.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="0" column="7111" lean-forward="false" selection-start-line="0" selection-start-column="7108" selection-end-line="0" selection-end-column="7111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="936">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/geojson.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="993">
+          <caret line="291" column="28" lean-forward="false" selection-start-line="291" selection-start-column="16" selection-end-line="291" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/geojson/North_Carolina_107_to_107.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="0" column="319902" lean-forward="true" selection-start-line="0" selection-start-column="319902" selection-end-line="0" selection-end-column="319902" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="252" column="76" lean-forward="true" selection-start-line="252" selection-start-column="76" selection-end-line="252" selection-end-column="76" />
+          <folding>
+            <element signature="e#18#67#0" expanded="false" />
+            <element signature="e#6315#7328#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
