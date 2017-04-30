@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="58b02963-46d4-439a-9cc9-58996b548269" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -45,12 +44,11 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1452">
-              <caret line="204" column="42" lean-forward="true" selection-start-line="204" selection-start-column="42" selection-end-line="204" selection-end-column="42" />
+            <state relative-caret-position="1239">
+              <caret line="236" column="63" lean-forward="true" selection-start-line="236" selection-start-column="63" selection-end-line="236" selection-end-column="63" />
               <folding>
                 <element signature="e#242#291#0" expanded="false" />
                 <element signature="e#6372#8004#0" expanded="false" />
-                <element signature="e#10736#19433#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -360,7 +358,7 @@
       <workItem from="1493251741402" duration="10111000" />
       <workItem from="1493430107418" duration="89000" />
       <workItem from="1493518189099" duration="2585000" />
-      <workItem from="1493565998329" duration="14371000" />
+      <workItem from="1493565998329" duration="14605000" />
     </task>
     <task id="LOCAL-00001" summary="575 final - committing any new code.">
       <created>1493082279581</created>
@@ -411,11 +409,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493587206711</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="575 final - Changed checkboxes to radio buttons">
+      <created>1493590237304</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1493590237304</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58375000" />
+    <option name="totallyTimeSpent" value="58609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4816" y="2644" width="4832" height="2632" extended-state="6" />
@@ -455,7 +460,8 @@
     <MESSAGE value="575 final - Color code based on party and only use North Carolina." />
     <MESSAGE value="575 final - Added simple popup and function to obtain json properties." />
     <MESSAGE value="575 final - Set up checkboxes for all geojson layers." />
-    <option name="LAST_COMMIT_MESSAGE" value="575 final - Set up checkboxes for all geojson layers." />
+    <MESSAGE value="575 final - Changed checkboxes to radio buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="575 final - Changed checkboxes to radio buttons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -585,7 +591,6 @@
           <folding>
             <element signature="e#242#291#0" expanded="false" />
             <element signature="e#6372#8004#0" expanded="false" />
-            <element signature="e#10736#19433#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -620,7 +625,6 @@
           <folding>
             <element signature="e#242#291#0" expanded="false" />
             <element signature="e#6372#8004#0" expanded="false" />
-            <element signature="e#10736#19433#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,7 +667,6 @@
           <folding>
             <element signature="e#242#291#0" expanded="false" />
             <element signature="e#6372#8004#0" expanded="false" />
-            <element signature="e#10736#19433#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -829,12 +832,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1452">
-          <caret line="204" column="42" lean-forward="true" selection-start-line="204" selection-start-column="42" selection-end-line="204" selection-end-column="42" />
+        <state relative-caret-position="1239">
+          <caret line="236" column="63" lean-forward="true" selection-start-line="236" selection-start-column="63" selection-end-line="236" selection-end-column="63" />
           <folding>
             <element signature="e#242#291#0" expanded="false" />
             <element signature="e#6372#8004#0" expanded="false" />
-            <element signature="e#10736#19433#0" expanded="false" />
           </folding>
         </state>
       </provider>

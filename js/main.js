@@ -221,7 +221,7 @@
                         } else if (get_json_item(feature, 'party') === 'Democrat') {
                             return {color: "#0000ff"};
                         } else if (get_json_item(feature, 'party') === 'Whig') {
-                            return {color: "#d8f076"};
+                            return {color: "#2af039"};
                         } else {
                             return {color: "#f097ee"};
                         }
@@ -240,6 +240,9 @@
                     }
                 });
                 json_name.addTo(my_map);
+                var layerBounds = json_name.getBounds();
+                my_map.fitBounds(layerBounds);
+
             }
         });
     }
