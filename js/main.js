@@ -2,7 +2,7 @@
 
     //create the map
     var my_map = L.map('mapid', {
-        center: [36, -79.6],
+        center: [37, -79.6],
         zoom: 7
     });
 
@@ -205,11 +205,13 @@
                 'March 4, 1901 to March 3, 1903',
                 'March 5, 1903 to March 3, 1909',
                 'March 4, 1909 to March 3, 1913',
+                'March 4, 1913 to March 3, 1933',
                 'March 4, 1933 to December 16, 1942',
                 'January 6, 1943 to October 13, 1962',
                 'January 9, 1963 to October 22, 1966',
                 'January 10, 1967 to October 14, 1968',
                 'January 3, 1969 to October 18, 1972',
+
                 'January 3, 1973 to December 23, 1982',
                 'January 3, 1983 to October 9, 1992',
                 'January 5, 1993 to December 19, 1998',
@@ -226,28 +228,12 @@
     };
 
 
-    // var panelContent = "<p><b>Congressman:</b></p>";
-    //
-    // function createPopup(feature, layer, radius) {
-    //     var popupContent = feature.properties.gage;
-    //
-    //     layer.bindPopup(popupContent, {
-    //         offset: new L.Point(0, -radius),
-    //         closeButton: false
-    //     });
-    // };
-
-
     // load and color geojson
     function getData(my_map, json_string) {
-        console.log(json_string);
         var sub = ' ';
         var index_number = json_string.indexOf(sub);
-        console.log(index_number);
         var json_filename = json_string.slice(0,index_number);
-        console.log(json_filename);
         var ind = json_string.slice(index_number, json_string.length);
-        console.log(json_string.slice(index_number, json_string.length));
 
         $.ajax('data/geojson/' + json_filename, {
             dataType: "json",
@@ -269,14 +255,18 @@
                         var name = get_json_item(feature, 'name');
                         var district = get_json_item(feature, 'district');
 
-                        layer.bindPopup('Name: ' + name + '<br />' +
-                            'District: ' + district + '<br />' +
-                            'Party: ' + party);//,
-                        // layer.on('mouseover', function (e) {
-                        //     $('#panel1').html(get_json_item(feature, 'party'));
-                        // });
+                        layer.bindPopup('<b>Name:</b> ' + name + '<br />' +
+                            '<b>District:</b> ' + district + '<br />' +
+                            '<b>Party:</b> ' + party),
+                        layer.on('mouseover', function (e) {
+                           this.openPopup();
+                        }),
+                        layer.on('mouseout', function (e) {
+                            this.closePopup();
+                        });
                     }
                 });
+                set_footer_info(response);
                 get_map_title(json_filename, ind);
                 json_name.addTo(my_map);
                 var layerBounds = json_name.getBounds();
@@ -287,16 +277,36 @@
     }
 
 
+    // set footer information
+    function set_footer_info(data_response) {
+
+        // var table_header = '<tr><td><b>Name:</b></td><td><b>Party:</b></td><td><b>District:</b></td><td><b>ID:</b></td></tr>';
+        // $("#footer_table").append(table_header);
+        var f = data_response.features;
+        for (var i in f) {
+            var id = f[i].properties.id;
+            var party = get_json_item(f[i], 'party');
+            var name = get_json_item(f[i], 'name');
+            var district = get_json_item(f[i], 'district');
+            var table_data = '<tr><td><b>Name: </b>' + name + '</td><td><b>Party: </b>' + party + '</td><td><b>District: </b>' + district + '</td><td><b>ID: </b>' + id + '</td></tr>';
+            $("#footer_table").append(table_data);
+        }
+
+    }
+
     // Set title of map
     function get_map_title(json, ind) {
         var json_text = $('input[text="' + json + '"]').val();
-        var title_block = '<h3 id="district">' + json_text + '</h3><br>' +
+        var title_block = '<h2 id="district">' + json_text + '</h2><br>' +
             '<p>' + date_list[Number(ind)] + '</p>';
         $('#title_block').html(title_block);
     }
 
     // function to clear all layers
     function clearLayer() {
+        $(document).ready(function() {
+            $("#footer_table").find("tr:gt(0)").remove();
+        });
         my_map.eachLayer(function(layer) {
             if (layer.feature) {
                 my_map.removeLayer(layer);
@@ -500,7 +510,7 @@
             }
         });
 
-        $('input[name="North_Carolina_78_to_87.geojson"]').change(function () {
+        $('input[text="North_Carolina_78_to_87.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
                 getData(my_map, 'North_Carolina_78_to_87.geojson '+ '20');

@@ -5,20 +5,24 @@ html, body, .container {
     border-radius: 15px;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 #title_block {
-    float: left;
+    float: right;
     position: absolute;
-    top: 2%;
-    left: 46.5%;
+    top: 1%;
+    right:.5%;
     z-index: 500;
-    width: 500px;
+    width: 600px;
     border-radius: 15px;
     border: 2px solid #463d3c;
-    /*box-shadow: 5px 5px 5px #888888;*/
     background-color: whitesmoke;
     text-align: center;
+}
+#title_block p {
+    margin-top: -10px;
+    font-size: 18px;
 }
 
 #column1 {
@@ -45,8 +49,33 @@ html, body, .container {
     margin: 10px;
     margin-top: 1.5%;
     height: 30%;
-    background: #f0f0f7;
+    background: #fafafa;
+    padding-left: 20px;
+    padding-top: 5px;
+    overflow: scroll;
 }
+#footer span {
+    font-size: 10px;
+    position: absolute;
+    bottom: -36px;
+    padding: 20px;
+}
+
+table{
+    border: 1px solid black;
+    padding-right: 20px;
+    padding-left: 5px;
+    width: 98%;
+    /*border-collapse: separate;*/
+    bording-spacing: 100px 0;
+}
+td {
+    border: 1px solid black;
+    padding: 10px 0;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
 
 .row-fluid {
     height: 100%;
@@ -60,6 +89,24 @@ html, body, .container {
     box-shadow: 5px 5px 5px #888888;
 }
 
+
+#radio_form {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+input[type=radio] {
+    /*margin-bottom: 5px;*/
+    /*line-spacing: 18px;*/
+    border: 0px;
+    width: 11%;
+    height: 1.2em;
+}
+#radio_form p {
+    display: inline;
+    padding-left: 10px;
+    font-size: 16px;
+}
 
 
 
