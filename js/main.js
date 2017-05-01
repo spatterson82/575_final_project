@@ -256,8 +256,8 @@
                         var district = get_json_item(feature, 'district');
 
                         layer.bindPopup('<b>Name:</b> ' + name + '<br />' +
-                            '<b>District:</b> ' + district + '<br />' +
-                            '<b>Party:</b> ' + party),
+                        '<b>District:</b> ' + district + '<br />' +
+                        '<b>Party:</b> ' + party),
                         layer.on('mouseover', function (e) {
                            this.openPopup();
                         }),
@@ -266,9 +266,11 @@
                         });
                     }
                 });
+                json_name.addTo(my_map);
+
                 set_footer_info(response);
                 get_map_title(json_filename, ind);
-                json_name.addTo(my_map);
+
                 var layerBounds = json_name.getBounds();
                 my_map.fitBounds(layerBounds);
 
@@ -279,15 +281,13 @@
 
     // set footer information
     function set_footer_info(data_response) {
-
-        // var table_header = '<tr><td><b>Name:</b></td><td><b>Party:</b></td><td><b>District:</b></td><td><b>ID:</b></td></tr>';
-        // $("#footer_table").append(table_header);
         var f = data_response.features;
         for (var i in f) {
             var id = f[i].properties.id;
             var party = get_json_item(f[i], 'party');
             var name = get_json_item(f[i], 'name');
             var district = get_json_item(f[i], 'district');
+
             var table_data = '<tr><td><b>Name: </b>' + name + '</td><td><b>Party: </b>' + party + '</td><td><b>District: </b>' + district + '</td><td><b>ID: </b>' + id + '</td></tr>';
             $("#footer_table").append(table_data);
         }
@@ -304,9 +304,7 @@
 
     // function to clear all layers
     function clearLayer() {
-        $(document).ready(function() {
-            $("#footer_table").find("tr:gt(0)").remove();
-        });
+        $('#footer_table').empty();
         my_map.eachLayer(function(layer) {
             if (layer.feature) {
                 my_map.removeLayer(layer);
