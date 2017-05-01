@@ -246,6 +246,12 @@
                             return {color: "#0000ff"};
                         } else if (get_json_item(feature, 'party') === 'Whig') {
                             return {color: "#14c814"};
+                        } else if (get_json_item(feature, 'party') === 'Populist') {
+                            return {color: "#c5c80c"};
+                        } else if (get_json_item(feature, 'party') === 'Anti-Administration') {
+                            return {color: "#c8b167"};
+                        } else if (get_json_item(feature, 'party') === 'Pro-Administration') {
+                            return {color: "#69c8b0"};
                         } else {
                             return {color: "#9f4df0"};
                         }
