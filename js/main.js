@@ -187,13 +187,42 @@
                     'North_Carolina_107_to_107.geojson',
                     'North_Carolina_108_to_112.geojson']
 
+    var date_list = ['March 4, 1789 to March 3, 1791',
+                'March 4, 1791 to March 2, 1793',
+                'March 4, 1793 to March 3, 1803',
+                'October 17, 1803 to March 3, 1813',
+                'May 24, 1813 to March 3, 1843',
+                'December 4, 1843 to March 3, 1847',
+                'December 6, 1847 to March 3, 1853',
+                'March 4, 1853 to March 3, 1861',
+                'March 4, 1867 to March 3, 1873',
+                'March 4, 1873 to March 3, 1883',
+                'December 3, 1883 to March 3, 1885',
+                'March 4, 1885 to March 3, 1893',
+                'March 4, 1893 to March 3, 1897',
+                'March 4, 1897 to March 3, 1899',
+                'December 4, 1899 to March 3, 1901',
+                'March 4, 1901 to March 3, 1903',
+                'March 5, 1903 to March 3, 1909',
+                'March 4, 1909 to March 3, 1913',
+                'March 4, 1933 to December 16, 1942',
+                'January 6, 1943 to October 13, 1962',
+                'January 9, 1963 to October 22, 1966',
+                'January 10, 1967 to October 14, 1968',
+                'January 3, 1969 to October 18, 1972',
+                'January 3, 1973 to December 23, 1982',
+                'January 3, 1983 to October 9, 1992',
+                'January 5, 1993 to December 19, 1998',
+                'January 6, 1999 to December 15, 2000',
+                'January 3, 2001 to November 22, 2002',
+                'January 7, 2003 to January 3, 2013']
 
     //function to instantiate the Leaflet map
     function createMap(){
         //call getData function
-        getData(my_map, file_list[0]);
+        getData(my_map, file_list[0] + ' 0');
         set_checkboxes();
-        $('input[value="North_Carolina_1_to_1.geojson"]').prop('checked', true);
+        $('input[text="North_Carolina_1_to_1.geojson"]').prop('checked', true);
     };
 
 
@@ -210,8 +239,17 @@
 
 
     // load and color geojson
-    function getData(my_map, json_name) {
-        $.ajax('data/geojson/' + json_name, {
+    function getData(my_map, json_string) {
+        console.log(json_string);
+        var sub = ' ';
+        var index_number = json_string.indexOf(sub);
+        console.log(index_number);
+        var json_filename = json_string.slice(0,index_number);
+        console.log(json_filename);
+        var ind = json_string.slice(index_number, json_string.length);
+        console.log(json_string.slice(index_number, json_string.length));
+
+        $.ajax('data/geojson/' + json_filename, {
             dataType: "json",
             success: function (response) {
                 var json_name = L.geoJson(response, {
@@ -221,9 +259,9 @@
                         } else if (get_json_item(feature, 'party') === 'Democrat') {
                             return {color: "#0000ff"};
                         } else if (get_json_item(feature, 'party') === 'Whig') {
-                            return {color: "#2af039"};
+                            return {color: "#14c814"};
                         } else {
-                            return {color: "#f097ee"};
+                            return {color: "#9f4df0"};
                         }
                     },
                     onEachFeature: function (feature, layer) {
@@ -239,6 +277,7 @@
                         // });
                     }
                 });
+                get_map_title(json_filename, ind);
                 json_name.addTo(my_map);
                 var layerBounds = json_name.getBounds();
                 my_map.fitBounds(layerBounds);
@@ -247,6 +286,14 @@
         });
     }
 
+
+    // Set title of map
+    function get_map_title(json, ind) {
+        var json_text = $('input[text="' + json + '"]').val();
+        var title_block = '<h3 id="district">' + json_text + '</h3><br>' +
+            '<p>' + date_list[Number(ind)] + '</p>';
+        $('#title_block').html(title_block);
+    }
 
     // function to clear all layers
     function clearLayer() {
@@ -271,183 +318,183 @@
 
 
     function set_checkboxes() {
-        $('input[value="North_Carolina_1_to_1.geojson"]').change(function() {
+        $('input[text="North_Carolina_1_to_1.geojson"]').change(function() {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_1_to_1.geojson');
+                getData(my_map, 'North_Carolina_1_to_1.geojson' + '0');
             } else {
                 clearLayer();
 
             }
         });
 
-        $('input[value="North_Carolina_2_to_2.geojson"]').change(function () {
+        $('input[text="North_Carolina_2_to_2.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_2_to_2.geojson');
+                getData(my_map, 'North_Carolina_2_to_2.geojson '+ '1');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_3_to_7.geojson"]').change(function () {
+        $('input[text="North_Carolina_3_to_7.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_3_to_7.geojson');
+                getData(my_map, 'North_Carolina_3_to_7.geojson '+ '2');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_8_to_12.geojson"]').change(function () {
+        $('input[text="North_Carolina_8_to_12.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_8_to_12.geojson');
+                getData(my_map, 'North_Carolina_8_to_12.geojson '+ '3');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_13_to_27.geojson"]').change(function () {
+        $('input[text="North_Carolina_13_to_27.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_13_to_27.geojson');
+                getData(my_map, 'North_Carolina_13_to_27.geojson '+ '4');
             } else {
                 clearLayer();
                 ;
             }
         });
 
-        $('input[value="North_Carolina_28_to_29.geojson"]').change(function () {
+        $('input[text="North_Carolina_28_to_29.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_28_to_29.geojson');
+                getData(my_map, 'North_Carolina_28_to_29.geojson '+ '5');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_30_to_32.geojson"]').change(function () {
+        $('input[text="North_Carolina_30_to_32.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_30_to_32.geojson');
+                getData(my_map, 'North_Carolina_30_to_32.geojson '+ '6');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_33_to_36.geojson"]').change(function () {
+        $('input[text="North_Carolina_33_to_36.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_33_to_36.geojson');
+                getData(my_map, 'North_Carolina_33_to_36.geojson '+ '7');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_40_to_42.geojson"]').change(function () {
+        $('input[text="North_Carolina_40_to_42.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_40_to_42.geojson');
+                getData(my_map, 'North_Carolina_40_to_42.geojson '+ '8');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_43_to_47.geojson"]').change(function () {
+        $('input[text="North_Carolina_43_to_47.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_43_to_47.geojson');
+                getData(my_map, 'North_Carolina_43_to_47.geojson '+ '9');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_48_to_48.geojson"]').change(function () {
+        $('input[text="North_Carolina_48_to_48.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_48_to_48.geojson');
+                getData(my_map, 'North_Carolina_48_to_48.geojson '+ '10');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_49_to_52.geojson"]').change(function () {
+        $('input[text="North_Carolina_49_to_52.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_49_to_52.geojson');
+                getData(my_map, 'North_Carolina_49_to_52.geojson '+ '11');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_53_to_54.geojson"]').change(function () {
+        $('input[text="North_Carolina_53_to_54.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_53_to_54.geojson');
+                getData(my_map, 'North_Carolina_53_to_54.geojson '+ '12');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_55_to_55.geojson"]').change(function () {
+        $('input[text="North_Carolina_55_to_55.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_55_to_55.geojson');
+                getData(my_map, 'North_Carolina_55_to_55.geojson '+ '13');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_56_to_56.geojson"]').change(function () {
+        $('input[text="North_Carolina_56_to_56.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_56_to_56.geojson');
+                getData(my_map, 'North_Carolina_56_to_56.geojson '+ '14');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_57_to_57.geojson"]').change(function () {
+        $('input[text="North_Carolina_57_to_57.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_57_to_57.geojson');
+                getData(my_map, 'North_Carolina_57_to_57.geojson '+ '15');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_58_to_60.geojson"]').change(function () {
+        $('input[text="North_Carolina_58_to_60.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_58_to_60.geojson');
+                getData(my_map, 'North_Carolina_58_to_60.geojson '+ '16');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_61_to_62.geojson"]').change(function () {
+        $('input[text="North_Carolina_61_to_62.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_61_to_62.geojson');
+                getData(my_map, 'North_Carolina_61_to_62.geojson '+ '17');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_63_to_72.geojson"]').change(function () {
+        $('input[text="North_Carolina_63_to_72.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_63_to_72.geojson');
+                getData(my_map, 'North_Carolina_63_to_72.geojson '+ '18');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_73_to_77.geojson"]').change(function () {
+        $('input[text="North_Carolina_73_to_77.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_73_to_77.geojson');
+                getData(my_map, 'North_Carolina_73_to_77.geojson '+ '19');
             } else {
                 clearLayer();
             }
@@ -456,88 +503,88 @@
         $('input[name="North_Carolina_78_to_87.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_78_to_87.geojson');
+                getData(my_map, 'North_Carolina_78_to_87.geojson '+ '20');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_88_to_89.geojson"]').change(function () {
+        $('input[text="North_Carolina_88_to_89.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_88_to_89.geojson');
+                getData(my_map, 'North_Carolina_88_to_89.geojson '+ '21');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_90_to_90.geojson"]').change(function () {
+        $('input[text="North_Carolina_90_to_90.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_90_to_90.geojson');
+                getData(my_map, 'North_Carolina_90_to_90.geojson '+ '22');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_91_to_92.geojson"]').change(function () {
+        $('input[text="North_Carolina_91_to_92.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_91_to_92.geojson');
+                getData(my_map, 'North_Carolina_91_to_92.geojson '+ '23');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_93_to_97.geojson"]').change(function () {
+        $('input[text="North_Carolina_93_to_97.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_93_to_97.geojson');
+                getData(my_map, 'North_Carolina_93_to_97.geojson '+ '24');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_98_to_102.geojson"]').change(function () {
+        $('input[text="North_Carolina_98_to_102.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_98_to_102.geojson');
+                getData(my_map, 'North_Carolina_98_to_102.geojson '+ '25');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_103_to_105.geojson"]').change(function () {
+        $('input[text="North_Carolina_103_to_105.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_103_to_105.geojson');
+                getData(my_map, 'North_Carolina_103_to_105.geojson '+ '26');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_106_to_106.geojson"]').change(function () {
+        $('input[text="North_Carolina_106_to_106.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_106_to_106.geojson');
+                getData(my_map, 'North_Carolina_106_to_106.geojson '+ '27');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_107_to_107.geojson"]').change(function () {
+        $('input[text="North_Carolina_107_to_107.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_107_to_107.geojson');
+                getData(my_map, 'North_Carolina_107_to_107.geojson '+ '28');
             } else {
                 clearLayer();
             }
         });
 
-        $('input[value="North_Carolina_108_to_112.geojson"]').change(function () {
+        $('input[text="North_Carolina_108_to_112.geojson"]').change(function () {
             if (this.checked) {
                 clearLayer();
-                getData(my_map, 'North_Carolina_108_to_112.geojson');
+                getData(my_map, 'North_Carolina_108_to_112.geojson '+ '29');
             } else {
                 clearLayer();
             }

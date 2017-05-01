@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="58b02963-46d4-439a-9cc9-58996b548269" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1582">
-              <caret line="66" column="46" lean-forward="true" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+            <state relative-caret-position="3380">
+              <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -44,12 +45,21 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1239">
-              <caret line="236" column="63" lean-forward="true" selection-start-line="236" selection-start-column="63" selection-end-line="236" selection-end-column="63" />
+            <state relative-caret-position="1275">
+              <caret line="289" column="23" lean-forward="true" selection-start-line="289" selection-start-column="23" selection-end-line="289" selection-end-column="23" />
               <folding>
                 <element signature="e#242#291#0" expanded="false" />
-                <element signature="e#6372#8004#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="North_Carolina_1_to_1.geojson" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/geojson/North_Carolina_1_to_1.geojson">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1307520">
+              <caret line="0" column="82" lean-forward="false" selection-start-line="0" selection-start-column="82" selection-end-line="0" selection-end-column="82" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,10 +96,16 @@
       <find>ch</find>
       <find>console</find>
       <find>checkbox</find>
+      <find>name</find>
+      <find>text2=</find>
+      <find>input[value</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>radio</replace>
+      <replace>text2</replace>
+      <replace>text=</replace>
+      <replace>input[text</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -358,7 +374,7 @@
       <workItem from="1493251741402" duration="10111000" />
       <workItem from="1493430107418" duration="89000" />
       <workItem from="1493518189099" duration="2585000" />
-      <workItem from="1493565998329" duration="14605000" />
+      <workItem from="1493565998329" duration="19756000" />
     </task>
     <task id="LOCAL-00001" summary="575 final - committing any new code.">
       <created>1493082279581</created>
@@ -416,11 +432,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493590237304</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="575 final - Added zoom to feature automatically.">
+      <created>1493590472675</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1493590472675</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58609000" />
+    <option name="totallyTimeSpent" value="63760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4816" y="2644" width="4832" height="2632" extended-state="6" />
@@ -461,7 +484,8 @@
     <MESSAGE value="575 final - Added simple popup and function to obtain json properties." />
     <MESSAGE value="575 final - Set up checkboxes for all geojson layers." />
     <MESSAGE value="575 final - Changed checkboxes to radio buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="575 final - Changed checkboxes to radio buttons" />
+    <MESSAGE value="575 final - Added zoom to feature automatically." />
+    <option name="LAST_COMMIT_MESSAGE" value="575 final - Added zoom to feature automatically." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -470,13 +494,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1456">
@@ -590,7 +607,6 @@
           <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
           <folding>
             <element signature="e#242#291#0" expanded="false" />
-            <element signature="e#6372#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -624,7 +640,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#242#291#0" expanded="false" />
-            <element signature="e#6372#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -666,7 +681,6 @@
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#242#291#0" expanded="false" />
-            <element signature="e#6372#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -824,19 +838,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1582">
-          <caret line="66" column="46" lean-forward="true" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+        <state relative-caret-position="3380">
+          <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/geojson/North_Carolina_1_to_1.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1307520">
+          <caret line="0" column="82" lean-forward="false" selection-start-line="0" selection-start-column="82" selection-end-line="0" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="236" column="63" lean-forward="true" selection-start-line="236" selection-start-column="63" selection-end-line="236" selection-end-column="63" />
+        <state relative-caret-position="1275">
+          <caret line="289" column="23" lean-forward="true" selection-start-line="289" selection-start-column="23" selection-end-line="289" selection-end-column="23" />
           <folding>
             <element signature="e#242#291#0" expanded="false" />
-            <element signature="e#6372#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
