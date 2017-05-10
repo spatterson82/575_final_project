@@ -156,7 +156,7 @@
     // Set title of map
     function get_map_title(json, ind) {
         var json_text = $('input[text="' + json + '"]').val();
-        var title_block = '<h2 id="district">' + json_text + '</h2><br>' +
+        var title_block = '<h3 id="district">' + json_text + '</h3><br>' +
             '<p>' + date_list[Number(ind)] + '</p>';
         $('#title_block').html(title_block);
     }

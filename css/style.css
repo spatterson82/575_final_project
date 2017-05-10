@@ -20,9 +20,13 @@ html, body, .container {
     background-color: whitesmoke;
     text-align: center;
 }
+
+#title_block h3 {
+    margin-top: 8px;
+}
 #title_block p {
-    margin-top: -10px;
-    font-size: 18px;
+    margin-top: -20px;
+    font-size: 17px;
 }
 
 #column1 {
